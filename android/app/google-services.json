@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "293862595732",
+    "project_id": "locatorapp-867ed",
+    "storage_bucket": "locatorapp-867ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293862595732:android:942d02b6ef4f280742a881",
+        "android_client_info": {
+          "package_name": "com.ragossio.locator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "293862595732-8ls7q446mvak4bq4qs7pibi521l2osfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ragossio.locator",
+            "certificate_hash": "111ca455911c37d543e93e976533f3e8c2c4f1b7"
+          }
+        },
+        {
+          "client_id": "293862595732-e631a7jt2dptgv4jst8jsvsaoo3gpbs9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4Q7MRGYv1rwUGyRpKTYTssNfcqTJ-jfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "293862595732-e631a7jt2dptgv4jst8jsvsaoo3gpbs9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
