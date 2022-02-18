@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vibrate/flutter_vibrate.dart';
+//import 'package:flutter_vibrate/flutter_vibrate.dart';
 import 'package:locator/fire.dart';
 import 'package:locator/order.dart';
 
@@ -66,27 +68,55 @@ class _PedidosState extends State<Pedidos> {
     );
   }
 */
-  Widget buildOrder(Order order) => Card(
-        elevation: 5.0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(0.0),
-        ),
-        child: Container(
-          width: 10.0, //MediaQuery.of(context).size.width,
-          height: 100.0,
-          padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
-          child: ListTile(
+  Widget buildOrder(Order order) {
+    Vibrate.canVibrate.then((value) {
+      if (value) {
+        Vibrate.vibrate;
+      }
+    });
+
+    return Card(
+      elevation: 5.0,
+      color: Colors.lightGreen[50],
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8.0),
+      ),
+      child: Container(
+        width: 10.0, //MediaQuery.of(context).size.width,
+        height: 100.0,
+        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+        child: ListTile(
             leading: CircleAvatar(
               backgroundImage: AssetImage('lib/assets/png/cook.png'),
               radius: 30.0,
             ),
+            title: Text('Rest: ${order.company}'),
+            subtitle: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Id: ${order.orderId}'),
+                Text('Calls: ${order.calls}'),
+              ],
+            ),
+            trailing: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Icon(
+                  Icons.delivery_dining,
+                  color: Colors.orangeAccent,
+                ),
+                Text(order.status),
+              ],
+            )
+
             /*trailing: CircleAvatar(
                 backgroundImage: AssetImage('lib/assets/gif/food.gif'),
                 radius: 35.0,
               )*/
-          ),
-        ),
-      );
+            ),
+      ),
+    );
+  }
 }
 
 /*

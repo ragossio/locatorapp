@@ -37,7 +37,7 @@ class CustomWidgetFloatingButtom extends StatelessWidget {
 
   void _barCode() async {
     String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
-        '#ff6666', 'CANCELAR', false, ScanMode.BARCODE);
+        '#e28743', 'CANCELAR', false, ScanMode.BARCODE);
 
     print(barcodeScanRes);
   }

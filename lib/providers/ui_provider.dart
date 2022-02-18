@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class UIProvider extends ChangeNotifier {
   int _currentPage = 0;
-  Color _colorNotify = Colors.lightGreen;
+  Color _colorNotify = Colors.lightBlue;
 
   int get currentPage {
     return this._currentPage;

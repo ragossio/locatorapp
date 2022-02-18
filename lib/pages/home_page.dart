@@ -25,13 +25,13 @@ class HomePage extends StatelessWidget {
         elevation: 1,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(250.0),
-            bottomRight: Radius.circular(250.0),
+            bottomLeft: Radius.circular(60.0),
+            bottomRight: Radius.circular(60.0),
           ),
         ),
         bottom: PreferredSize(
           child: SizedBox(),
-          preferredSize: Size.fromHeight(150.0),
+          preferredSize: Size.fromHeight(80.0),
         ),
       ),
       body: _HomePage(),
