@@ -34,6 +34,10 @@ dependencies:
   google_sign_in: ^5.2.3
   firebase_storage: ^10.2.7
   cloud_firestore: ^3.1.8
+  widget_circular_animator: ^1.0.0
+  
+  # flutter_animation_set: ^0.0.4
+  # slimy_card: ^1.0.4
 
 dev_dependencies:
   flutter_test:
@@ -51,8 +55,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - lib/assets/png/cook.png
+    - lib/assets/gif/food.gif
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

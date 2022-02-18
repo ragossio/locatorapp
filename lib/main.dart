@@ -3,8 +3,11 @@ import 'package:flutter/services.dart';
 import 'package:locator/pages/home_page.dart';
 import 'package:locator/providers/ui_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
