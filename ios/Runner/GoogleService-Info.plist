@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>293862595732-obh9g46c7rgnm7eqtnn71svunr4qkd3q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.293862595732-obh9g46c7rgnm7eqtnn71svunr4qkd3q</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>293862595732-8ls7q446mvak4bq4qs7pibi521l2osfl.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyACY_rS5shg7ScaxGmdyKM2-bUuYr-Oxtc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>293862595732</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ragossio.locator</string>
+	<key>PROJECT_ID</key>
+	<string>locatorapp-867ed</string>
+	<key>STORAGE_BUCKET</key>
+	<string>locatorapp-867ed.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:293862595732:ios:51b1c55d25f7a16442a881</string>
+	<key>DATABASE_URL</key>
+	<string>https://locatorapp-867ed-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
