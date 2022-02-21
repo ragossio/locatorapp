@@ -15,11 +15,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: currentStateColorNotify,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          tooltip: 'Menu',
-          onPressed: () {},
-        ),
         centerTitle: true,
         title: Text('Localizador Virtual'),
         elevation: 1,

@@ -74,7 +74,9 @@ class _PedidosState extends State<Pedidos> {
         Vibrate.vibrate;
       }
     });
-
+    String url = "https://st4.depositphotos.com/18664664/22485/v/600/depositphotos_224853604-stock-illustration-restaurant-icon-icon-trendy-restaurant.jpg";
+    Widget cloudImage = Image(image: NetworkImage(order.urlImage));
+   
     return Card(
       elevation: 5.0,
       color: Colors.lightGreen[50],
@@ -86,10 +88,7 @@ class _PedidosState extends State<Pedidos> {
         height: 100.0,
         padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
         child: ListTile(
-            leading: CircleAvatar(
-              backgroundImage: AssetImage('lib/assets/png/cook.png'),
-              radius: 30.0,
-            ),
+            leading: cloudImage,
             title: Text('Rest: ${order.company}'),
             subtitle: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -108,11 +107,6 @@ class _PedidosState extends State<Pedidos> {
                 Text(order.status),
               ],
             )
-
-            /*trailing: CircleAvatar(
-                backgroundImage: AssetImage('lib/assets/gif/food.gif'),
-                radius: 35.0,
-              )*/
             ),
       ),
     );
@@ -120,6 +114,16 @@ class _PedidosState extends State<Pedidos> {
 }
 
 /*
+
+CircleAvatar(
+              backgroundImage: fadein,
+              radius: 30.0,
+            )
+
+            /*trailing: CircleAvatar(
+                backgroundImage: AssetImage('lib/assets/gif/food.gif'),
+                radius: 35.0,
+              )*/
 
  Container(
                 width: 40,
